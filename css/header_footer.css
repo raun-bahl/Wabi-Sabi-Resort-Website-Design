@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+	font-family: 'Asian Hiro';
+	src: url("../fonts/AAsianHiro-2O17X.otf"); 
+}
+
+/***/
+/* nav bar styling */
+/***/
+a:link {
+	text-decoration: none;
+}
+.nav {
+	height:70px;
+	line-height: 70px;
+	text-align: right;
+	background-color: #020048;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+}
+
+.progress-container {
+	width: 100%;
+	height: 5px;
+	background: #ccc;
+}
+
+.progress-bar {
+	height: 5px;
+	background: #873B17;
+	width: 0%;
+}
+
+.menu {
+}
+
+.scroll-top{
+    width:100px; 
+    border-radius: 40px;
+    padding:10px;
+    text-align:center; 
+    background: #EDE7D1;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px; 
+    color: #020048;
+    text-decoration: none;
+    position:fixed;
+    margin-bottom: 90px;
+    margin-right: 15px;
+    right:0;
+    z-index: 100;
+    bottom: 0;
+    display:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scroll-top:hover{
+	transition: 0.25s;
+	background: #626262;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.menu a {
+	padding-right: 20px;
+	z-index: 100;
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	color: #EDE7D1;
+	margin: 0 10px;
+	line-height: 70px;
+	transition: all 0.3s ease 0s;
+}
+
+.menu a:hover {
+	color: #626262;
+}
+
+.menu a:active {
+	color: #fff;
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	color: #EDE7D1;
+	padding-left: 20px;
+}
+
+#toggle {
+	display: none;
+}
+
+.logo {
+	margin-left: 25px;
+	height: 70px;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    float: left;
+}
+
+/***/
+/* footer styling */
+/***/
+footer {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	line-height: 50px;
+	background-color: #020048;
+}
+
+.references {
+	float: left;
+	padding-left: 30px;
+	padding-top: 15px;
+}
+
+.references a {
+	color: #EDE7D1;
+}
+
+.references a:hover {
+	color: #626262;
+}
+
+.copyright-text {
+	padding-top: 15px;
+	padding-right: 30px;
+	color: #EDE7D1;
+	float: right;
+
+}
+
+/****/
+/* Basic styling for references 
+   Note: References page isn't responsive */
+/****/
+
+
+.reference-page h1 {
+	font-family: "Playfair Display", serif;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.reference-page h2 {
+	font-family: "Playfair Display", serif;
+	color: grey;
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 20px;
+}
+
+.references-container {
+	padding: 50px;
+	max-height: 900px;
+	width: 1000px;
+	background-color: #f1f1f1;
+	margin: 0 auto;
+}
+
+.reference-page a {
+	float: right;
+	padding: 50px;
+	font-size: 22px;
+}
+
+.references-container p {
+	font-size: 16px;
+	color: #000;
+}
+
+
+/****/
+/* Responsive media queries */
+/****/
+
+@media only screen and (max-width: 960px) {
+
+	label {
+		display: block;
+		cursor: pointer;
+	}
+	
+	.menu {
+		width: 100%;
+		height: 90vh;
+		background: rgba(237, 231, 209, 0.95);
+		text-align: center;
+		display: none;
+	}
+	.menu a {
+		color: #020048;
+		display: block;
+		border-bottom: 1px solid #873B17;
+		margin-left: 75px;
+		margin-right: 75px;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}
+
+	.menu a:hover {
+		transform: scale(1.05);
+	}
+
+	.copyright-text {
+		font-size: 14px;
+	}
+
+	.references a {
+		font-size: 14px;
+	}
+
+	.logo {
+		float: right;
+	}
+}

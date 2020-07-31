@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair&display=swap');
+@font-face {
+	font-family: 'Asian Hiro';
+	src: url("../fonts/AAsianHiro-2O17X.otf"); 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #020048;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Asian Hiro';
+	font-size: 70px;
+	color: #020048;
+}
+
+h2 {
+	font-family: "Playfair Display SC", serif;
+	font-size: 28px;
+	color: #04006C;
+	float: right;
+}
+
+.main {
+	background-image: url('../images/gallery14.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.main-studio-desc {
+	padding: 50px 50px 50px 50px;
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+
+}
+
+.main-studio-pic {
+	max-width: 800px;
+	max-height: 800px;
+	border-radius: 30px;
+}
+
+.main-studio-pic:hover {
+	transform: scale(1.025);
+	transition: 0.3s;
+}
+
+.desc-text {
+	height: 300px;
+	width: 400px;
+	display: flex;
+	align-items: center;
+	padding-top: 150px;
+	padding-left: 100px;
+}
+
+.desc-text p {
+	font-family: 'Bellefair', sans-serif;
+	font-size: 24px;
+
+}
+.more-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Playfair Display", serif; 
+	padding: 9px 25px;
+	margin-left: 50px;
+	background-color:#020048;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	color: #EDE7D1;
+	text-decoration: none;
+}
+
+.info-container {
+	padding: 100px;
+}
+
+.sub-container {
+	display:flex;
+	justify-content: center;
+  	align-items:center;
+  	flex-direction: row;
+  	display: block;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.column {
+	flex: 25%;
+	max-width: 25%;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+.info-heading {
+	padding: 10px 10px 10px 10px;
+	display: flex;
+}
+
+.info-heading h2 {
+	margin: auto;
+	padding-right: 50px;
+	color: #873B17;
+	text-transform: uppercase;
+}
+
+.info-text {
+	margin: auto;
+}
+
+.info-text p {
+	font-family: 'Bellefair', sans-serif;
+	font-size: 18px;
+	padding-top: 30px;
+	margin-bottom: 65px;
+}
+
+.icons {
+	margin-top: 20px;
+	margin-left: 70px;
+	width: 99px;
+	height: 99px;
+}
+
+.icons:hover {
+	transform: scale(1.01);
+	transform: rotate(5deg);
+	transition: 0.3s;
+}
+
+/****/
+/* studio container styling */
+/****/
+
+.studio-booking {
+	background-image: url("../images/studiomain.jpg");
+	background-size: cover;
+	opacity: 0.9;
+	min-height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+.studio-button {
+	font-family: "Playfair Display", serif; 
+	background-color: #EDE7D1;
+	padding: 9px 25px;
+	font-size: 18px;
+	border: none;
+	margin-top: 30px;
+	margin-right: 15px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.studio-button:hover {
+	background: #f1f1f1;
+}
+
+/****/
+/* Booking container styling */
+/****/
+
+.booking-text {
+	padding-top: 100px;
+	width: 400px;
+	height: 400px;
+}
+
+.booking-text p {
+	font-family: 'Bellefair', sans-serif;
+	font-size: 24px;
+	color: #EDE7D1;
+	padding-bottom: 50px;
+}
+
+
+
+/****/
+/* Responsive media queries */
+/****/
+
+@media screen and (max-width: 960px) {
+
+	.main-studio-pic {
+		width: 400px;
+		height: 400px;
+	}
+
+	.main-studio-desc {;
+		width: 300px;
+		flex-direction: column;
+	}
+
+	.content .desc-text {
+		width: 300px;
+		padding-top: 10px;
+		padding-left: 50px;
+	}
+	.info-text {
+		width: 200px;
+		height: 500px;
+	}
+
+	.icons {
+		display: none;
+	}
+
+	.column {
+		flex: 100%;
+		max-width: 80%;
+		height: 300px;
+	}
+}
+

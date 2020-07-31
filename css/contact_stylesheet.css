@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+	font-family: 'Asian Hiro';
+	src: url("../fonts/AAsianHiro-2O17X.otf"); 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../images/slide1.jpg');
+	height: 100%
+	background-size: 25%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+p {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Asian Hiro';
+	color: #873B17;
+	padding-bottom: 40px;
+}
+
+.container {
+	max-width: 600px;
+	height: 100%;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 80px;
+}
+
+.input,
+.message .area {
+	font-family: "Playfair Display", serif;
+	font-size: 12px;
+	text-decoration-color: #B5ABA6;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+	border: 2px solid #B9B5A6;
+	border-radius: 5px;
+	outline: none;
+	transition: all 0.5s;
+}
+
+.message .area {
+	height: 200px;
+}
+
+.details .input {
+	width: 48%;
+	float: left;
+	margin-right: 2%;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Playfair Display", serif; 
+	padding: 9px 25px;
+	background-color: #EDE7D1;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	text-decoration-color: #020048;
+	color: #000;
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+
+.button:hover {
+	background: #B9B5A6;
+}
+
+/* an error box which is invisible at first and  triggered during form validation*/
+.container #error {
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #fe8b8e;
+	text-align: center;
+	font-size: 12px;
+	transition: all 0.5s ease;
+}
+

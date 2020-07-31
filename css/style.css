@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+	font-family: 'Asian Hiro';
+	src: url("../fonts/AAsianHiro-2O17X.otf"); 
+}
+
+/****/
+/* Homepage styling along with some general styles implemented across all webpages */
+/****/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #020048;
+	text-decoration: none;
+}
+
+img:hover {
+	opacity: 0.8;
+	transition: 0.3s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+h1 {
+	font-family: 'Asian Hiro';
+	font-size: 60px;
+	color: #873B17;
+	padding-bottom: 25px;
+}
+
+h2  {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+body {
+	margin: 0;
+}
+
+p {
+	font-family: 'Bellefair', serif;
+	font-size: 18px;
+	color: grey;
+}
+
+section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+header button {
+	font-family: "Playfair Display", serif; 
+	background-color: #EDE7D1;
+	padding: 9px 25px;
+	font-size: 18px;
+	border: none;
+	margin-top: 20px;
+	margin-right: 15px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+	background: #B9B5A6;
+}
+
+/****/
+/* Main section styling */
+/****/
+
+#main-heading {
+	font-family: 'Asian Hiro';
+	font-size: 60px;
+	color: #EDE7D1;
+}
+
+#main-heading:hover {
+	transform: scale(1.02);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#slideshow {
+	background-image: url('../images/main.png');
+	background-attachment: fixed;
+}
+
+.main_button {
+	font-family: "Playfair Display", serif; 
+	background-color: #EDE7D1;
+	padding: 9px 25px;
+	font-size: 18px;
+	border: none;
+	margin-top: 50px;
+	margin-right: 15px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+
+.main_button:hover {
+	background: #B9B5A6;
+}
+
+.section_inner a {
+	color: #020048;
+}
+
+.button {
+	background-color: #000000;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	margin-left: 25px;
+}
+
+.text-boxes {
+	width: 700px;
+	height:  500px;
+	padding-top: 100px;
+}
+
+/****/
+/* Concept section styling */
+/****/
+
+#concept h1 {
+	padding-bottom: 70px;
+}
+
+#about h1 {
+	padding-top: 50px;
+}
+
+#concept .img-text-container {
+	display:flex;
+	justify-content: center;
+  	align-items:center;
+  	flex-direction: row;
+  	margin: 100px 100px 100px 100px;
+  	padding-bottom: 200px;
+}
+
+.concept-container {
+	height: 400px;
+}
+
+#concept .concept-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 100px 100px 100px 100px;
+}
+
+#concept .concept-pictures:hover {
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+#concept .text {
+	margin: 80px 50px 100px 200px;
+	font-size: 20px;
+}
+
+.about-text {
+	height: 400px;
+	width: 700px;
+	color: #000;
+	padding-top: 70px;
+	font-family: 'Bellefair', serif;
+	font-size: 20px;
+	color: grey; 
+}
+
+/****/
+/* Newsletter section styling */
+/****/
+
+#newsletter {
+	background-image: url("../images/contact.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#newsletter .section-inner {
+	background: #fff;
+	padding: 40px;
+	border-radius: 30px;
+}
+
+.newsletter-container {
+	width: 550px;
+}
+
+#concept .concept-pictures {
+	max-height: 400px;
+	max-width: 3400px;
+	border-radius: 35px;
+}
+
+#newsletter .section-inner:hover {
+	transform: scale(1.025);
+	transition: 0.3s;
+}
+#newsletter .section-inner p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/****/
+/* Gallery section styling */
+/****/
+
+#gallery {
+	margin-bottom: 50px;
+}
+
+.gallery-section {
+	width: 80%;
+	padding-top: 100px;
+	background: #fff;
+}
+
+.inner-width {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.gallery-section h1 {
+	padding-bottom: 100px;
+}
+
+.border {
+	width: 180px;
+	height: 4px;
+	background: #fff;
+	margin: 60px auto;
+}
+
+.gallery-section .gallery  {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+.gallery-section .image {
+	flex: 25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.gallery-section .image img {
+	width: 200px;
+	padding: 7.5px;
+	height: 250px;
+	transition: 0.4s;
+}
+
+.gallery-section .image:hover img {
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+.gallery-more-btn {
+	 float: right;
+	  border: none;
+	  background-color: inherit;
+	  padding: 14px 28px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  display: inline-block;
+	  color: #393939;
+	  margin-right: 75px;
+	  margin-top: 20px;
+	 font-family: 'Raleway', sans-serif;
+	 font-size: 18px;
+}
+
+.gallery-more-btn:hover {
+	color: #787878;
+}
+
+/****/
+/* Newsletter section styling */
+/****/
+
+#newsletter h1 {
+	padding-bottom: 50px;
+}
+
+.input {
+	font-family: "Playfair Display", serif;
+	font-size: 12px;
+	text-decoration-color: #B5ABA6;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 2px solid #B9B5A6;
+	border-radius: 40px;
+	outline: none;
+	transition: all 0.5s;
+	margin-right: 50px;
+	margin-left: 30px;
+}
+
+.details .input {
+	width: 60%;
+	float: left;
+}
+
+.news-button {
+	font-family: "Playfair Display", serif; 
+	padding: 9px 25px;
+	background-color: #EDE7D1;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	text-decoration-color: #020048;
+	color: #000;
+	text-decoration: none;
+	margin-top: 10px;
+	float:left;
+	margin-bottom: 50px;
+}
+
+.news-container {
+	max-width: 800px;
+	height: 100%;
+	background: #fff;
+	margin:50px auto;
+	box-sizing: border-box;
+	max-height: 400px;
+}
+
+/****/
+/* Testimonial images */
+/****/
+
+.testimonials {
+	padding: 40px 0;
+	background-image: url('../images/gallery9.jpeg');
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.testimonial-heading {
+	font-family: 'Asian Hiro';
+	font-size: 60px;
+	color: #020048;
+	padding-bottom: 30px;
+}
+}
+
+.inner {
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+.testimonials-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.testimonials-col {
+	flex: 33.33%;
+	max-width: 33.33%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.testimonial {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: #fff;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 30px;
+	height: 450px;
+	border-radius: 20px;
+}
+
+.testimonial:hover {
+	transform: scale(1.025);
+	transition: 0.3s;
+}
+
+.testimonials img {
+	max-height: 100px;
+	max-height: 100px;
+}
+
+.stars img {
+	max-height: 20px;
+	max-width: 20px;
+	margin-bottom: 20px;
+}
+
+.name {
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	color: #000;
+}
+
+/* error box which is triggered for form validation; invisible at first */
+.section-inner #error {
+	padding: 0px;
+	max-width: 300px;
+	margin: 0 auto;
+	margin-top: 130px;
+	background: #fe8b8e;
+	text-align: center;
+	font-size: 12px;
+	transition: all 0.5s ease;
+}
+
+
+/****/
+/* Responsive media queries */
+/****/
+
+@media screen and (max-width: 600px) {
+	.testimonials-col {
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	.testimonial-heading {
+	font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.gallery-section .image {
+		flex: 50%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+
+	body {
+		max-width: 960px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+	.gallery-section .image {
+		flex: 35.33%;
+	}
+
+	.newsletter-container {
+		width: 400px;
+	}
+
+	.news-button {
+		margin-left: 150px;
+	}
+
+	.input {
+		margin-left: 70px;
+	}
+
+	.about-text {
+		width: 400px;
+		margin-bottom: 250px;
+	}
+
+	.concept-container {
+		height: 400px;
+	}
+	.gallery-more-btn {
+		font-size: 15px;
+	}
+
+	#concept .img-text-container {
+		flex-direction: column;
+	}
+
+	#concept .concept-pictures {
+		margin-top: 500px;
+		height: 300px;
+		width: 200px;
+	}
+
+	.text-boxes {
+		padding-top: 1px;
+		padding-right: 75px;
+		margin-right: 50px;
+	}
+
+	#concept .text {
+		font-size: 16px;
+	}
+
+	#concept .img-text-container-reverse {
+		flex-direction: column;
+	}
+
+	.gallery-section .image {
+		flex: 100%;
+	}
+
+	.testimonials-col {
+		flex: 100%;
+		max-width: 80%;
+	}
+
+	.testimonial-heading {
+		font-size: 40px;
+	}
+
+	.testimonial p {
+		font-size: 16px;
+	}
+
+	.section-inner #error {
+		padding: 0px;
+		max-width: 300px;
+		margin: 0 auto;
+		margin-top: 200px;
+		background: #fe8b8e;
+		font-size: 12px;
+		transition: all 0.5s ease;
+	}
+
+	#main-heading {
+		font-family: 'Asian Hiro';
+		font-size: 50px;
+		color: #EDE7D1;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.input {
+		margin-left: 75px;
+	}
+
+	.news-button {
+		margin-right: 100px;
+	}
+}
+
+

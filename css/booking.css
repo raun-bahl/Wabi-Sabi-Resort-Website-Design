@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+@font-face {
+	font-family: 'Asian Hiro';
+	src: url("../fonts/AAsianHiro-2O17X.otf"); 
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+form {
+	display: grid;
+	grid-row-gap: 20px;
+}
+
+h1 {
+	font-family: 'Asian Hiro';
+	font-size: 60px;
+	color: #873B17;
+	text-align: center;
+	padding-top: 75px;
+	padding-bottom: 100px;
+}
+
+h2 {
+	font-family: "Playfair Display SC", serif;
+	font-size: 40px;
+	color: #04006C;
+}
+
+h3 {
+	font-family: "Raleway Light", sans-serif;
+	font-size: 22px;
+	color: #B5ABA6;
+}
+
+p {
+	font-family: 'Bellefair', serif;
+	font-size: 16px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+input, select {
+	padding: 20px;
+	box-sizing: border-box;
+	border: 2px solid #B9B5A6;
+	border-radius: 40px;
+	outline: none;
+}
+
+img:hover {
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.heading {
+	font-family: 'Asian Hiro';
+	font-size: 24px;
+	padding-bottom: 20px;
+	color: #873B17;
+}
+
+.main {
+	background-image: url('../images/bookings_main.png');
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/****/
+/* form styling */
+/****/
+.form-container {
+	background-color: #fafafa;
+	min-height: 300px;
+	min-width: 300px;
+	padding: 50px;
+	color: #000;
+	border-radius: 20px;
+	box-shadow: 1px 8px 8px #888888; 
+
+}
+
+.form-field {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 100px;
+	font-family: "Playfair Display", serif; 
+	padding: 9px 25px;
+	background-color:#1AA630;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	text-decoration-color: #020048;
+	color: #000;
+	text-decoration: none;
+	margin-top: 25px;
+}
+
+.form-container .button {
+	margin-right: 100px;
+}
+
+.button:hover {
+	background: #168427;
+}
+
+
+.money-font {
+	font-family: "Playfair Display", serif;
+	font-size: 32px;
+	color: #873B17;
+}
+
+.stars {
+	padding-top: 20px;
+}
+.stars img {
+	max-height: 20px;
+	max-width: 20px;
+	margin-bottom: 10px;
+}
+
+/****/
+/* room container styling */
+/****/
+
+.rooms {
+	min-height: 100vh;
+}
+
+.room-container {
+	display:flex;
+	justify-content: center;
+  	align-items:center;
+  	flex-direction: row;
+  	margin-bottom: 75px;
+}
+
+.room-pictures {
+	max-height: 400px;
+	max-width: 3400px;
+	float: left;
+	padding-right: 200px;
+}
+
+
+.text-box {
+	min-width: 500px;
+	min-height: 400px;
+	text-align: center;
+}
+
+
+.text-box .button {
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+p.room-text {
+	width: 400px;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+
+/****/
+/* popup styling */
+/****/
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	border: 1px solid black;
+	transition: 200ms ease-in-out;
+	border-radius: 20px;
+	z-index: 10;
+	background-color: white;
+	width: 500px; 
+	max-width: 80%;
+	height: 325px;
+}
+
+.popup.active {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+	padding: 30px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.popup-header .title {
+	font-size: 1.25rem;
+	font-family: 'Playfair Display', serif;
+	margin-left: 150px;
+}
+
+.popup-header .close-button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.popup-body {
+	padding: 10px 15px;
+	font-family: 'Bellefair', serif;
+	font-size: 16px;
+}
+ 
+.popup-logo {
+	padding-bottom: 25px;
+	width: 99px;
+	height: 99px;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 400px;
+}
+
+.button-container .confirm {
+	font-family: "Playfair Display", serif; 
+	margin-top: 25px;
+	padding: 9px 25px;
+	background-color:#1AA630;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	text-decoration-color: #020048;
+	color: #000;
+	text-decoration: none;
+	margin-left: 155px;
+}
+
+.button-container .deny {
+	font-family: "Playfair Display", serif; 
+	margin-top: 25px;
+	padding: 9px 25px;
+	background-color: #fe8b8e;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	text-decoration-color: #020048;
+	color: #000;
+	text-decoration: none;
+	margin-right: 130px;
+	margin-left: 20px;
+}
+
+/* error box which is triggered for form validation; invisible at first */
+.form-container #error {
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #fe8b8e;
+	text-align: center;
+	font-size: 12px;
+	transition: all 0.5s ease;
+}
+
+/****/
+/* popup overlay styling */
+/****/
+
+#overlay {
+	transition: 200ms ease-in-out;
+	position: fixed;
+	opacity: 0;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+	pointer-events: none;
+}
+
+#overlay.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+/****/
+/* Responsive media queries */
+/****/
+
+@media screen and (max-width: 960px) {
+
+	.room-container {
+		margin-bottom: 1px;
+		flex-direction: column;
+	}
+
+	.room-pictures {
+		height: 300px;
+		width: 300px;
+		padding-right: 30px;
+	}
+
+	.text-box {
+		margin-top: 50px;
+	}
+
+	.popup-header .title {
+		font-size: 1.25rem;
+		font-family: 'Playfair Display', serif;
+		margin-left: 100px;
+	}
+
+	.button-container .confirm {
+		margin-left: 100px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.room-container {
+		flex: 100%;
+		max-width: 100%;
+	}
+}

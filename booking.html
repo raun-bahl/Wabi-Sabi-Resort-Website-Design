@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset= "UTF-8">
+		<title> Booking </title>
+		<link rel = "stylesheet" href = "css/booking.css">
+		<link rel = "stylesheet" href = "css/header_footer.css">
+		<link rel = "stylesheet" href = "css/transition.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src = "js/back_to_top.js"> </script>
+		<script src = "js/validation.js"></script>
+		<script defer src = "js/popup.js"></script>
+		<script src = "js/scroll-bar.js"> </script>
+	</head>
+	<body>
+		<header>
+			<div class = "nav">
+			<img src = "images/logo.png" class = "logo" alt = "logo">
+				<label for = "toggle"> &#9776; </label>
+				<input type = "checkbox" id="toggle"/>
+				<div class = "menu">
+					<a href = "index.html"> Home </a>
+					<a href ="index.html#about"> About </a>
+					<a href = "studio.html"> Studio </a>
+					<a href = "gallery.html">  Gallery </a>
+					<a href ="booking.html"> Bookings </a>
+					<a href ="contact.html"> Contact </a>
+				</div>
+				<div class = "progress-container"> 
+					<div class = "progress-bar" id = "bar"> </div>
+				</div>
+			</div>
+		</header>
+		<a href="#" class="scroll-top">Scroll To Top</a>
+		<div class = "main">
+			<div class = "form-container">
+				<form action = "#">
+					<div class = "heading"> CHECK AVAILABILITY </div>
+					<div class = "form-field">
+						<p> Check-in Date </p>
+						<input type = "date" name = "date" id = "date">
+					</div>
+					<div class = "form-field">
+						<p> Check-out Date </p>
+						<input type = "date" name= "date" id = "date">
+					</div>
+					<div class = "form-field">
+						<p> Number of Guests </p>
+						<select name = "select" id ="#">
+							<option value = "1"> 1 person </option>
+							<option value = "2"> 2 people </option>
+							<option value = "3"> 3 people </option>
+							<option value = "4"> 4 people </option>
+							<option value = "4"> 5+ people </option>
+						</select>
+					</div>
+					<button type = "button" data-popup-target= "#popup" class = "button"> Check </button>
+				</form>
+				<div class = "popup" id = "popup">
+					<div class = "popup-header">
+						<div class = "title"> Booking Available </div>
+						<button type = "button" data-close-button class = "close-button"> &times; </button>
+					</div>
+					<div class = "popup-body">
+						<object data="images/hotel.svg" type = "image/svg+xml" class = "popup-logo"> </object>
+						<div class = "popup-text">
+							This booking is available! Do you want to 
+							confirm?
+						</div>
+						<div class = "button-container">
+							<button type = "button" class = "confirm" onclick="return success()"> Yes </button>
+							<button type = "button" data-close-button class =  "deny"> No </button>
+						</div>
+					</div>
+				</div>
+				<div id = "overlay"> </div>
+			</div>
+		</div>
+		<h1> ROOMS </h1>
+		<div class = "rooms"> 
+			<div class = "room-container">
+				<img src = 'images/room1.png' class="room-pictures" alt = "room1">
+				<div class = "text-box">
+					<h2> SUPREME ROOM </h2>
+					<div class = "stars">
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+					</div>
+					<h3> Starts at <span class = "money-font"> ¥899</span> /night </h3>
+					<p class = "room-text">
+						 Our supreme rooms were designed with the intention of majesty. They come with your own personal hot spring pools, stunning vistas as well as complimentary drinks and snacks for the duration of your stay, it simply cannot get better than this. 
+					</p>
+					<button type = "button" data-popup-target= "#popup" class = "button"> Choose Supreme Room </button>
+				</div>
+			</div>
+			<div class = "room-container">
+				<img src = 'images/room2.png' class="room-pictures" alt = "room2">
+				<div class = "text-box">
+					<h2> DELUXE ROOM </h2>
+					<div class = "stars">
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+					</div>
+					<h3> Starts at <span class = "money-font"> ¥649</span> /night </h3>
+					<p class = "room-text">
+						 With reclaimed wood and stone architecture inside and the calm theatrics of Japanese landscaping outside, our deluxe rooms bring you the best of what we offer at Wabi Sabi without being very heavy on your pocket.
+					</p>
+					<button type = "button" data-popup-target= "#popup" class = "button"> Choose Deluxe Room </button>
+				</div>
+			</div>
+			<div class = "room-container">
+				<img src = 'images/room3.png' class="room-pictures" alt = "room3">
+				<div class = "text-box">
+					<h2> REGULAR ROOM </h2>
+					<div class = "stars">
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+						<a href = "images/star.png" class = "image">
+							<img src = "images/star.png" alt = "star">
+						</a>
+					</div>
+					<h3> Starts at <span class = "money-font"> ¥399</span>/night </h3>
+					<p class = "room-text">
+						 We have made no mistake with our most value-for-money boarding option. Replete with all the necessities you would expect from a premier retreat, our simple rooms come with sublime views of the peninsula along with the promise of peace within the white limestone and brick construction. 
+					</p>
+					<button type = "button" data-popup-target= "#popup" class = "button"> Choose Regular Room </button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class = "copyright-text"> © Copyright Wabi Sabi Resort, Raunaq Bahl 44744335 </div>
+			<div class = "references">
+				<a href = "references.html"> References </a>
+			</div>
+		</footer>
+	</body>
+</html>
